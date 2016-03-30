@@ -17,6 +17,8 @@ public class InstanciarObjeto {
 		 * 
 		 * CLASSE NOME_OBJETO = new CONSTRUTOR
 		 * 
+		 * NOME_OBJETO pode ser o que você quiser, é um identificador nada mais.
+		 * 
 		 * */
 		
 		PrimeiraClasse pClass = new PrimeiraClasse();
