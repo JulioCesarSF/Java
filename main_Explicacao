@@ -1,0 +1,19 @@
+public class HelloWorld {	
+	
+	public static void main(String[] args) {
+		
+		/* PROGRAMAS TEM UM ENTRY POINT, START POINT, tanto faz o nome, mas ele sempre deve existir */
+		/* No Java ele é dado pelo método: public static void main(String[] args) 
+		 * Traduzindo:
+		 * 
+		 * public por que ele precisa ter acesso a tudo no programa
+		 * static por que ele será comum a todos os objetos do programa
+		 * void por que ele não retorna nada
+		 * main é o nome
+		 * (String[] args) é o parâmetro do método main, significa um array de String	 * 
+		 * 
+		 * */
+
+	}
+
+}
