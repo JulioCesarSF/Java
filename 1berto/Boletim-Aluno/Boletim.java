@@ -10,7 +10,7 @@ public class Boletim {
 	
 	/* *** Meus métodos *** */
 	
-	public double exibirMédia(){
+	public double exibirMedia(){
 		/* Precisa colocar entre parênteses senão ele faz outra conta
 		 *  nota1 + nota2/2, ele vai dividir nota2 primeiro e depois somar com nota1
 		 *  (nota1 + nota2)/2 ele vai somar as notas e depois dividir		 * 
