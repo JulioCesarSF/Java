@@ -10,7 +10,7 @@ public class Teste {
 		
 		PF p = new PF();
 		p.setNome("Júlio");
-		p.setCpf("34978818800");
+		p.setCpf("34900010000");
 		
 		Veiculo v = new Veiculo();
 		v.setModelo("Focus");
