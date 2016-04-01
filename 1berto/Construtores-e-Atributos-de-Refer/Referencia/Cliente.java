@@ -3,8 +3,8 @@ package descanso.Mod;
 public class Cliente {
 	
 	private String nome, email;
-	Endereco endereco;
-	Telefone fone;
+	private Endereco endereco;
+	private Telefone fone;
 	
 	public Cliente(){}
 	
