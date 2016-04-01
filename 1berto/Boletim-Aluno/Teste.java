@@ -64,7 +64,7 @@ public class Teste {
 		System.out.println("->Boletim : " 
 						+ "\nNota1: "+ b.getNota1()
 						+ "\nNota2: " + b.getNota2()
-						+ "\nMédia: " + b.exibirMédia());
+						+ "\nMédia: " + b.exibirMedia());
 		
 		/* output:
 		 * ->Dados Pessoais: 
