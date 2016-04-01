@@ -7,21 +7,13 @@
 
 
  Exerc 03 - Pessoa Física 
-
 Nome: Julio César Schincariol Filho
-
 Endereco: Rua Haddock Lobo
-
 Email: julio.com@uol.com.br
-
 Sexo: H
-
 CPF: 0
-
 RG: 111111111
-
 Telefone: 30620213
-
 
  Exerc 03 - Pessoa Juridica 
 
