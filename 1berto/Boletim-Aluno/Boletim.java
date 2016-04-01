@@ -8,6 +8,17 @@ public class Boletim {
 	private int faltas;
 	private double nota1, nota2;
 	
+	/* *** Construtores *** */
+	
+	public Boletim(){}
+	
+	public Boletim(Aluno aluno, int faltas, double nota1, double nota2){
+		this.aluno = aluno;
+		this.faltas = faltas;
+		this.nota1 = nota1;
+		this.nota2 = nota2;
+	}
+	
 	/* *** Meus métodos *** */
 	
 	public double exibirMedia(){
