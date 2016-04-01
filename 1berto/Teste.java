@@ -72,7 +72,7 @@ public class Teste {
 			RM: 213132
 			Fone: 1234321
 			
-			->Boletim : 
+		  ->Boletim : 
 			Nota1: 10.0
 			Nota2: 9.5
 			Média: 9.75
