@@ -75,6 +75,7 @@ public class Teste {
 			Fone: 1234321
 			
 			->Boletim : 
+			Faltas: 0
 			Nota1: 10.0
 			Nota2: 9.5
 			Média: 9.75
