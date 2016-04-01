@@ -81,6 +81,22 @@ public class Teste {
 			Média: 9.75
 		 * 
 		 * */
+		 
+		 /* *** EXEMPLO 2 ***
+		 * Pedindo informação ao usuário
+		 * 
+		 */
+		
+		b.setNota1(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota1")));
+		b.setNota2(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota2")));
+		
+		/* Exibir notas e média */
+		
+		System.out.println("->Boletim : "
+						+ "\nFaltas: " + b.getFaltas()
+						+ "\nNota1: "+ b.getNota1()
+						+ "\nNota2: " + b.getNota2()
+						+ "\nMédia: " + b.exibirMedia());
 
 	}
 
