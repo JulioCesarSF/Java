@@ -97,6 +97,10 @@ public class Teste {
 						+ "\nNota1: "+ b.getNota1()
 						+ "\nNota2: " + b.getNota2()
 						+ "\nMédia: " + b.exibirMedia());
+						
+		/* Exibir média com o JOptioPane */
+		
+		JOptionPane.showMessageDialog(null, b.exibirMedia());
 
 	}
 
