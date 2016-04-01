@@ -11,7 +11,7 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		/* objeto Aluno, dei o nome de "a" para a "váriavel referência" */
+		/* objeto do Aluno, dei o nome de "a" para a "váriavel referência" */
 		
 		Aluno a = new Aluno();
 		
@@ -19,7 +19,7 @@ public class Teste {
 		a.setRm(213132);
 		a.setFone("1234321");
 		
-		/* objeto Boletim, dei o nome de "b" para a "váriavel referência" */
+		/* objeto do Boletim, dei o nome de "b" para a "váriavel referência" */
 		
 		Boletim b = new Boletim();
 		
