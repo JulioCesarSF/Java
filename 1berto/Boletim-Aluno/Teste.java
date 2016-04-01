@@ -32,6 +32,7 @@ public class Teste {
 		 * */
 		
 		b.setAluno(a);
+		b.setFaltas(0);
 		b.setNota1(10);
 		b.setNota2(9.5);		
 		
@@ -61,7 +62,8 @@ public class Teste {
 		
 		/* Exibir notas e média */
 		
-		System.out.println("->Boletim : " 
+		System.out.println("->Boletim : "
+						+ "\nFaltas: " + b.getFaltas()
 						+ "\nNota1: "+ b.getNota1()
 						+ "\nNota2: " + b.getNota2()
 						+ "\nMédia: " + b.exibirMedia());
@@ -72,7 +74,7 @@ public class Teste {
 			RM: 213132
 			Fone: 1234321
 			
-		  ->Boletim : 
+			->Boletim : 
 			Nota1: 10.0
 			Nota2: 9.5
 			Média: 9.75
