@@ -98,7 +98,7 @@ public class Teste {
 						+ "\nNota2: " + b.getNota2()
 						+ "\nMédia: " + b.exibirMedia());
 						
-		/* Exibir média com o JOptioPane */
+		/* Exibir média com o JOptionPane */
 		
 		JOptionPane.showMessageDialog(null, 
 				"->Boletim : "
