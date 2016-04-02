@@ -100,7 +100,12 @@ public class Teste {
 						
 		/* Exibir média com o JOptioPane */
 		
-		JOptionPane.showMessageDialog(null, b.exibirMedia());
+		JOptionPane.showMessageDialog(null, 
+				"->Boletim : "
+				+ "\nFaltas: " + b.getFaltas()
+				+ "\nNota1: "+ b.getNota1()
+				+ "\nNota2: " + b.getNota2()
+				+ "\nMédia: " + b.exibirMedia());
 
 	}
 
