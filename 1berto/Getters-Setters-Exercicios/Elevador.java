@@ -1,3 +1,5 @@
+package descansos.Modulos;
+
 public class Elevador {
 	
 	private int andar, totalAndares, capMaxima, pessoasAgora;
@@ -16,7 +18,7 @@ public class Elevador {
 		this.totalAndares = totalAndares;
 	}
 	
-	public void entra(int qntPessoa){		
+	public int entra(int qntPessoa){		
 		if( (this.pessoasAgora + qntPessoa) <= this.capMaxima ){
 			this.pessoasAgora += qntPessoa;
 		}
@@ -24,25 +26,33 @@ public class Elevador {
 			int pessoasDeFora = (this.pessoasAgora + qntPessoa) - this.capMaxima;
 			this.pessoasAgora = (this.pessoasAgora + qntPessoa) - pessoasDeFora;	
 		}
+		return this.pessoasAgora;
 	}
 	
-	public void sai(int qntPessoa){		
+	public int sai(int qntPessoa){		
 		if( (this.pessoasAgora - qntPessoa) >= 0 ){
 			this.pessoasAgora -= qntPessoa;
 		}
 		else{
 			this.pessoasAgora = 0;		
 		}
+		return this.pessoasAgora;
 	}
 	
-	public void sobe(){
-		if(andar != this.totalAndares)
-			andar += 1;		
+	public boolean sobe(){
+		if(andar != this.totalAndares){
+			andar += 1;	
+			return true;
+		}
+		return false;
 	}
 	
-	public void desce(){
-		if(andar != 0) /* exclui térreo */
+	public boolean desce(){
+		if(andar != 0) /* exclui térreo */{
 			andar -= 1;
+			return true;
+		}
+		return false;
 	}
 	
 	public String getAll(){
