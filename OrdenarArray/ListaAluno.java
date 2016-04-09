@@ -36,11 +36,14 @@ public class ListaAluno {
 			}			
 		}
 	}
+
+	public void addAluno(Aluno novoAluno){
+		alunos = setListaAlunos(alunos, novoAluno);
+	}
 	
 	public void addAluno(Aluno[] listaVelha, Aluno novoAluno){
 		alunos = setListaAlunos(listaVelha, novoAluno);
-	}
-	
+	}	
 		
 	public Aluno[] getListaAlunos(){
 		return this.alunos;
