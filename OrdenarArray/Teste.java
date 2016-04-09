@@ -32,7 +32,7 @@ public class Teste {
 			lista.listar();			
 		}
 		catch(Exception e){
-			System.out.println("Ocorreu um problema: " + e.getMessage());
+			System.out.println("Ocorreu um problema: " + e);
 		}
 
 	}
