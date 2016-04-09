@@ -10,10 +10,10 @@ public class Teste {
 		try{
 			ListaAluno lista = new ListaAluno();						
 			
-			lista.addAluno(new Aluno("Chardcen"));
-			lista.addAluno(new Aluno("Wynsung"));
-			lista.addAluno(new Aluno("Adelwald"));
-			lista.addAluno(new Aluno("Isenfast"), true);				
+			lista.addAluno(new Aluno("Chardcen Wynsung"));
+			lista.addAluno(new Aluno("Wynsung Isenfast"));
+			lista.addAluno(new Aluno("Wynsung Adelwald"));
+			lista.addAluno(new Aluno("Isenfast Chardcen"), true);				
 			
 			lista.listar();				
 		}
