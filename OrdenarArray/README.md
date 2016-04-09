@@ -1,4 +1,4 @@
-Ordenar array de Strings.
+Ordenar array de Alunos pelo nome.
 
 Output:
 
