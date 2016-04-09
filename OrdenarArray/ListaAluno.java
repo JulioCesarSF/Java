@@ -70,7 +70,7 @@ public class ListaAluno {
 		for(int i = 0; i < alunos.length; i++){			
 			for(int j = i + 1; j < alunos.length; j++){				
 				Aluno temp = new Aluno();				
-				if(alunos[i].getNome().trim().compareTo(alunos[j].getNome()) > 0){
+				if(alunos[i].getNome().trim().compareTo(alunos[j].getNome().trim()) > 0){
 					temp.setNome(alunos[i].getNome());
 					alunos[i].setNome(alunos[j].getNome());
 					alunos[j].setNome(temp.getNome());
