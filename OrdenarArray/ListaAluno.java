@@ -10,7 +10,7 @@ public class ListaAluno {
 	
 	public void listar(){
 		for(int i = 0; i < alunos.length; i++)
-			System.out.println(alunos[i].getNome());
+			System.out.println(i + "\t" + alunos[i].getNome());
 	}
 	
 	private Aluno[] setListaAlunos(Aluno[] listaVelha, Aluno novoAluno){
