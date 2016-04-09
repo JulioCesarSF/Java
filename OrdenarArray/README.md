@@ -1,6 +1,6 @@
 * Ordenar array de Alunos pelo nome.
 
-* Output possível:
+<b>Output possível:</b>
 
 <ul>
 <li>Chardcen Wynsung</li>
