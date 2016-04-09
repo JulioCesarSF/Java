@@ -3,7 +3,7 @@
 * Output possível:
 
 * Chardcen Wynsung
-* Isenfast Chardcen
+* * Isenfast Chardcen
 * Wynsung Adelwald
 * Wynsung Isenfast
 
