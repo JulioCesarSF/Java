@@ -12,10 +12,24 @@ public class Teste {
 		lista.addAluno(lista.getListaAlunos(), new Aluno("F"));
 		lista.addAluno(lista.getListaAlunos(), new Aluno("A"));
 		
-		
-		lista.ordenar();
 		lista.listar();
 		
+		/*OUTPUT
+		 * G
+		 * F
+		 * A
+		 * 
+		 * */
+		
+		lista.ordenar();		
+		lista.listar();
+		
+		/*OUTPUT
+		 * A
+		 * F
+		 * G
+		 * 
+		 * */		
 
 	}
 
