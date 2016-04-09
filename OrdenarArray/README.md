@@ -1,6 +1,6 @@
-Ordenar array de Alunos pelo nome.
+* Ordenar array de Alunos pelo nome.
 
-Output:
+* Output:
 
 Teste 1 não ordenada:
 
