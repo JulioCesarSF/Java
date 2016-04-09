@@ -81,7 +81,7 @@ public class ListaAluno {
 	
 	/**
 	 * 
-	 * Função para gerar novo array de objetos Aluno contento um novo Aluno.
+	 * Função para gerar novo array de objetos Aluno contendo um novo Aluno.
 	 * Função interna(private)
 	 * 
 	 * @param listaVelha
