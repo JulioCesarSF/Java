@@ -13,7 +13,7 @@ public class ListaAluno {
 			System.out.println(alunos[i].getNome());
 	}
 	
-	public Aluno[] setListaAlunos(Aluno[] listaVelha, Aluno novoAluno){
+	private Aluno[] setListaAlunos(Aluno[] listaVelha, Aluno novoAluno){
 		Aluno[] novaLista = new Aluno[listaVelha.length + 1];
 		
 		for(int i = 0; i < listaVelha.length; i++)
