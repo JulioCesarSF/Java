@@ -22,7 +22,7 @@ public class Main {
 		Email:	julio.com@uol.com.br
 		CPF:	123.456.789-00
 		Sexo:	M
-		Mensalidade:	1.030,800000
+		Mensalidade:	1.030,80
 		*/
 		
 	}
