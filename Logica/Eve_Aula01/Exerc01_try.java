@@ -28,6 +28,8 @@ public class Exerc01_try {
 			
 			p("A média da temperatura na semana foi: " + media);
 			p("A quantidade de dia(s) com temperatura(s) acima da média: " + dias);
+		}catch(InputMismatchException e){
+			p("Você digitou errado! " + e);
 		}catch (Exception e) {
 			p("Ocorreu um erro: " + e);
 		}		
