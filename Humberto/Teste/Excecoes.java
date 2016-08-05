@@ -1,3 +1,5 @@
+package com.julio.exception;
+
 @SuppressWarnings("serial")
 public class Excecoes extends Exception {
 	
@@ -32,7 +34,7 @@ public class Excecoes extends Exception {
 		}else if(e.getClass().toString().equals("class java.lang.NullPointerException")){
 			texto+=" NullPointerException";
 		}else
-			texto.concat("Erro não tratado.");
+			texto+=" Erro não tratado.";
 		
 		this.print();
 	}	
