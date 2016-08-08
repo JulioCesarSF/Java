@@ -12,7 +12,7 @@ public class Exerc07 {
 		try (Scanner t = new Scanner(System.in)) {
 			for (int i = 0; i < preco.length; i++) {
 
-				System.out.println("Informe o preÁo unit·rio:");
+				System.out.println("Informe o pre√ßo unit√°rio:");
 				preco[i] = t.nextDouble();
 
 				System.out.println("Informe a qtd vendidade:");
@@ -22,15 +22,15 @@ public class Exerc07 {
 			double totalGeral = 0d;
 			int maiorQtd = 0;
 			for (int i = 0; i < preco.length; i++) {
-				System.out.println("Qtde:" + qtd[i] + "\tPreÁo: R$" + preco[i] + "\tTotal: R$" + (qtd[i] * preco[i]));
+				System.out.println("Qtde:" + qtd[i] + "\tPre√ßo: R$" + preco[i] + "\tTotal: R$" + (qtd[i] * preco[i]));
 				totalGeral += (qtd[i] * preco[i]);
 				if (qtd[i] > maiorQtd)
 					maiorQtd = i;
 			}
 
 			System.out.println("Total geral: R$" + totalGeral);
-			System.out.println("Comiss„o: R$" + (totalGeral * 0.5));
-			System.out.println("PreÁo da maior quantidade R$" + preco[maiorQtd]);
+			System.out.println("Comiss√£o: R$" + (totalGeral * 0.05));
+			System.out.println("Pre√ßo da maior quantidade R$" + preco[maiorQtd]);
 
 		} catch (Exception e) {
 			System.out.println("Erro:" + e);
