@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class Exerc03 {
 
 	public static void main(String[] args) {
+		
+		double[][] notas = new double[10][4];
+		double media = 0d;
 
 		try (Scanner t = new Scanner(System.in)) {
-
-			double[][] notas = new double[10][4];
-			double media = 0d;
-
+			
 			for (int i = 0; i < notas.length; i++) {
 				System.out.println("Aluno:" + i);
 				media = 0d;
