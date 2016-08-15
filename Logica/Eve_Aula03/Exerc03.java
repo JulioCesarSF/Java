@@ -14,7 +14,7 @@ public class Exerc03 {
 				System.out.println("Aluno:" + i);
 				media = 0d;
 				for (int j = 0; j < 3; j++) {
-					System.out.println("Informe a nota da " + (i + 1) + "a. Prova:");
+					System.out.println("Informe a nota da " + (j + 1) + "a. Prova:");
 					notas[i][j] = t.nextDouble();
 					media += notas[i][j];
 				}
