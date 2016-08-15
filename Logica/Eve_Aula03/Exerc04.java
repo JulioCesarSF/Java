@@ -42,6 +42,8 @@ public class Exerc04 {
 
 		} catch (Exception e) {
 			System.out.println("Erro: " + e);
+		}finally {
+			System.out.println("Fim da execução.");
 		}
 
 	}
