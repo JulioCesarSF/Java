@@ -27,7 +27,7 @@ public class Excecoes extends Exception {
 		else if(e.getClass().toString().equals("class java.lang.NullPointerException"))
 			return "NullPointer";
 		else if(e.getClass().toString().equals("class java.util.ConcurrentModificationException")){
-			return "Ops...";
+			return "Ops...Monstro saiu da jaula.";
 		}else
 			return "Erro sem tratamento especial.";
 			
