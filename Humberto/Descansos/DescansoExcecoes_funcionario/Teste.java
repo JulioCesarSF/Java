@@ -108,8 +108,7 @@ public class Teste {
 
 	public static void delMais6k(List<Funcionario> f) {
 		for (Funcionario ff : f)
-			if (ff.getSalario() > 6000d){
-				System.out.println(ff.getTudo());
+			if (ff.getSalario() > 6000d){				
 				f.remove(ff);
 			}
 	}
