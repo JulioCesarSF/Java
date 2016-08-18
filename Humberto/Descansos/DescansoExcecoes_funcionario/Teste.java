@@ -88,7 +88,10 @@ public class Teste {
 		for (Funcionario ff : f)
 			if (ff.getFaltas() > 3)
 				lista.append("\nNome:\t" + ff.getNome() + "\tCargo:\t" + ff.getCargo());
-
+		
+		if (lista.equals(""))
+			lista.append("NENHUM");
+		
 		return lista.toString();
 	}
 
@@ -97,18 +100,21 @@ public class Teste {
 		StringBuilder lista = new StringBuilder();
 
 		for (Funcionario ff : f)
-			if (ff.getSalario() <= 6000)
+			if (ff.getSalario() <= 6000d)
 				lista.append(ff.getTudo() + "\n");
+		
 		return lista.toString();
 	}
 
 	public static void delMais6k(List<Funcionario> f) {
 		for (Funcionario ff : f)
-			if (ff.getSalario() > 6000)
+			if (ff.getSalario() > 6000d){
+				System.out.println(ff.getTudo());
 				f.remove(ff);
+			}
 	}
-	
-	public static void enunciados(List<Funcionario> f){
+
+	public static void enunciados(List<Funcionario> f) {
 		System.out.println("1. Total de funcionários cadastrados:\t" + totalFuncionarios(f));
 		System.out.println("2. Média geral dos salários:\t" + mediaSalario(f));
 		System.out.println("3. Total da folha de pagamento:\t" + totalFolha(f));
@@ -121,7 +127,9 @@ public class Teste {
 		// deletar
 		delMais6k(f);
 		System.out.println("Funcionário que ganham mais de R$ 6.000,00 deletados!");
-		f.forEach(x -> System.out.println(x.getTudo()));		
+		if (f.size() > 0)
+			for (Funcionario ff : f)
+				System.out.println(ff.getTudo());
 	}
 
 	public static void main(String[] args) throws Excecoes {
