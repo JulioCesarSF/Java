@@ -26,7 +26,9 @@ public class Excecoes extends Exception {
 			return "Index maior que array!";
 		else if(e.getClass().toString().equals("class java.lang.NullPointerException"))
 			return "NullPointer";
-		else
+		else if(e.getClass().toString().equals("class java.util.ConcurrentModificationException")){
+			return "NumberFormat...";
+		}else
 			return "Erro sem tratamento especial.";
 			
 	}
