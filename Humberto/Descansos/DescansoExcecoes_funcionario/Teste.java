@@ -107,6 +107,22 @@ public class Teste {
 			if (ff.getSalario() > 6000)
 				f.remove(ff);
 	}
+	
+	public static void enunciados(List<Funcionario> f){
+		System.out.println("1. Total de funcionários cadastrados:\t" + totalFuncionarios(f));
+		System.out.println("2. Média geral dos salários:\t" + mediaSalario(f));
+		System.out.println("3. Total da folha de pagamento:\t" + totalFolha(f));
+		System.out.println("4. Nomes de todos os funcionários:\n" + imprimirTodos(f));
+		System.out.println("5. Nomes e salários em ordem crescente:\n" + imprimirNomesSalarioCrescente(f));
+		System.out.println("6. Nomes e os cargos em ordem crescente com mais de 3 faltas:\t"
+				+ imprimirNomesCargosCrescenteFaltas(f));
+		System.out.println("7. Funcionários que não ganham mais de R$6.000,00:\n" + excluirMais6k(f));
+
+		// deletar
+		delMais6k(f);
+		System.out.println("Funcionário que ganham mais de R$ 6.000,00 deletados!");
+		f.forEach(x -> System.out.println(x.getTudo()));		
+	}
 
 	public static void main(String[] args) throws Excecoes {
 
@@ -126,19 +142,7 @@ public class Teste {
 				f.add(ff);
 			}
 
-			System.out.println("1. Total de funcionários cadastrados:\t" + totalFuncionarios(f));
-			System.out.println("2. Média geral dos salários:\t" + mediaSalario(f));
-			System.out.println("3. Total da folha de pagamento:\t" + totalFolha(f));
-			System.out.println("4. Nomes de todos os funcionários:\n" + imprimirTodos(f));
-			System.out.println("5. Nomes e salários em ordem crescente:\n" + imprimirNomesSalarioCrescente(f));
-			System.out.println("6. Nomes e os cargos em ordem crescente com mais de 3 faltas:\t"
-					+ imprimirNomesCargosCrescenteFaltas(f));
-			System.out.println("7. Funcionários que não ganham mais de R$6.000,00:\n" + excluirMais6k(f));
-
-			// deletar
-			delMais6k(f);
-			System.out.println("Funcionário que ganham mais de R$ 6.000,00 deletados!");
-			f.forEach(x -> System.out.println(x.getTudo()));
+			enunciados(f);
 
 		} catch (Exception e) {
 			throw new Excecoes("-> Erro", e);
