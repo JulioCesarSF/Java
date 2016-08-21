@@ -1,105 +1,165 @@
-package br.com.fiap.Testes;
+package br.com.fiap.teste;
 
 import java.text.NumberFormat;
 
 import javax.swing.JOptionPane;
 
-import br.com.fiap.Beans.Acessorio;
-import br.com.fiap.Beans.Veiculo;
-import br.com.fiap.Excecoes.Excecoes;
+import br.com.fiap.beans.Acessorio;
+import br.com.fiap.beans.Veiculo;
+import br.com.fiap.excecoes.Excecao;
 
 public class Teste {
 
-	public static String p(String t) {
-		return JOptionPane.showInputDialog(t);
-	}
-
-	public static Veiculo[] copiaVeiculo(Veiculo[] de, int tamanho) {
-		Veiculo[] vV = new Veiculo[tamanho];
-		for (int i = 0; i < tamanho; i++)
-			if (de[i] != null)
-				vV[i] = de[i];
-		return vV;
-	}
-
+	/* a-) Valor total de total os veículos cadastrados */
 	public static double valorTotal(Veiculo[] v) {
-		double total = 0d;
-		for (int i = 0; i < v.length; i++)
-			total += v[i].getValor();
-		return total;
+		double soma = 0d;
+		for (Veiculo a : v)
+			soma += a.getValor();
+		return soma;
 	}
 
-	public static double mediaVeiculo(Veiculo[] v) {
+	public static String valorTotalS(Veiculo[] v) {
+		double soma = 0d;
+		for (Veiculo a : v)
+			soma += a.getValor();
+		NumberFormat n = NumberFormat.getCurrencyInstance();
+		return n.format(soma);
+	}
+
+	/* b-) Média todos os veículos */
+	public static double mediaValores(Veiculo[] v) {
 		double media = 0d;
-		for (int i = 0; i < v.length; i++)
-			media += v[i].getValor();
+		for (Veiculo a : v)
+			media += a.getValor();
 		return media /= v.length;
 	}
 
+	public static String mediaValoresS(Veiculo[] v) {
+		double media = 0d;
+		for (Veiculo a : v)
+			media += a.getValor();
+		NumberFormat n = NumberFormat.getCurrencyInstance();
+		return n.format(media /= v.length);
+	}
+
+	/* c-) Veículo mais caro */
 	public static String maisCaro(Veiculo[] v) {
-		double valor = 0d;
-		int in = 0;
-		for (int i = 0; i < v.length; i++) {
-			if (v[i].getValor() > valor) {
-				valor = v[i].getValor();
-				in = i;
+		double d = 0;
+		String n = new String();
+		for (Veiculo a : v)
+			if (a.getValor() > d) {
+				d = a.getValor();
+				n = a.getTudo();
 			}
+
+		return n;
+	}
+
+	/*
+	 * d-) Total de acessórios de cada veículo, enunciado não fala se total é
+	 * quantidade ou de valores
+	 */
+	public static String totalAcessorios(Veiculo[] v) {
+		StringBuilder r = new StringBuilder();
+
+		for (Veiculo a : v)
+			r.append("\n" + a.getTudo() + " Total Acessório:\t" + a.getAcessorios().length);
+
+		return r.toString().toUpperCase();
+	}
+	
+	public static String totalAcessoriosD(Veiculo[] v){
+		StringBuilder r = new StringBuilder();
+		NumberFormat n = NumberFormat.getCurrencyInstance();	
+		
+		for(Veiculo a : v){
+			double s = 0d;
+			
+			for(Acessorio b : a.getAcessorios())
+				s+=b.getValor();
+			
+			r.append("\n" + a.getTudo() + "\tTotal Acessório:\t" + a.getAcessorios().length + "\t" + n.format(s));
 		}
-		return v[in].getTudo();
+		
+		return r.toString().toUpperCase();
 	}
 
-	public static void totalAc(Veiculo[] v) {
-		for (int i = 0; i < v.length; i++)
-			System.out.println("Modelo:\t" + v[i].getModelo() + "\tTotal Acessórios:\t" + v[i].totalAcessorios());
+	public static void enunciados(Veiculo[] v) {
+		System.out.println("a-) " + valorTotalS(v));
+		System.out.println("b-) " + mediaValoresS(v));
+		System.out.println("c-) " + maisCaro(v));
+		System.out.println("d-) " + totalAcessorios(v));
 	}
 
-	public static void main(String[] args) throws Excecoes {
+	public static void main(String[] args) throws Excecao {
 
 		Veiculo[] v = new Veiculo[5];
-		Acessorio[] ac = new Acessorio[3];
-		int max = 0;
-		int max2 = 0;
-
+		Acessorio[] a = new Acessorio[3];
+		int maxV = -1, maxA = -1; // index
 		try {
 
-			while (JOptionPane.showConfirmDialog(null, "Cadastrar Veículo?", "Veículo", JOptionPane.YES_NO_OPTION,
-					JOptionPane.QUESTION_MESSAGE) == 0 && max < 5) {
+			while (Helper.q("Cadastrar novo veículo?", "Cadastro de Veículo") != 1 && maxV <= 4) {
 
-				v[max] = new Veiculo(p("Modelo"), p("Montadora"), Integer.parseInt(p("Ano")),
-						Double.parseDouble(p("Valor")));
+				maxV++;
 
-				max2 = 0; // reset acessorios
+				Veiculo o = new Veiculo(Short.parseShort(Helper.a("Ano do veículo?")), Helper.a("Modelo do veículo?"),
+						Helper.a("Montadora do veículo?"), Double.parseDouble(Helper.a("Valor do veículo?")));
 
-				while (JOptionPane.showConfirmDialog(null, "Cadastrar Acessório?", "Acessório",
-						JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0 && max2 < 3) {
+				while (Helper.q("Cadastrar novo Acessório?", "Cadastro de acessório") != 1 && maxA <= 2) {
 
-					ac[max2] = new Acessorio(p("Descrição"), Double.parseDouble(p("Valor")));
-					max2++;
+					maxA++;
+
+					Acessorio o1 = new Acessorio(Helper.a("Descrição do acessório:"),
+							Double.parseDouble(Helper.a("Valor do Acessórios?")));
+
+					a[maxA] = o1;
+
 				}
+				maxA++; // ajustar para tamanho do array
+				o.setAcessorios(Helper.copiar(a, maxA));
+				maxA = -1; // reajustar index para o próximo veículo
 
-				Acessorio[] vA = new Acessorio[max2];
-
-				v[max].setAcessorios(vA);
-
-				max++;
-
+				v[maxV] = o;
 			}
 
-			Veiculo[] vV = copiaVeiculo(v, max);
+			maxV++; // ajustar para tamanho do array
+			Veiculo[] n = Helper.copiar(v, maxV);
 
-			NumberFormat nb = NumberFormat.getCurrencyInstance();
-			if (max > 0) {
-				System.out.println("Valor total todos os veiculos: " + nb.format(valorTotal(vV)));
-				System.out.println("Média de todos os veículos: " + nb.format(mediaVeiculo(vV)));
-				System.out.println("Veiculo mais caro: " + maisCaro(vV));
-				System.out.println("Total de acessórios de cada veículo:");
-				totalAc(vV);
-			}
+			if (maxV > 0)
+				enunciados(n);
+
 		} catch (Exception e) {
-			throw new Excecoes("Erro", e);
+			throw new Excecao("Erro!!!", e, true);
 		} finally {
 			System.out.println("Fim da execução!");
 		}
+
+	}
+
+	public static class Helper {
+
+		public static String a(String q) {
+			return JOptionPane.showInputDialog(q);
+		}
+
+		public static int q(String msg, String caption) {
+			return JOptionPane.showConfirmDialog(null, msg, caption, JOptionPane.YES_NO_OPTION,
+					JOptionPane.QUESTION_MESSAGE);
+		}
+
+		public static <T> T[] copiar(T[] original, int tamanho) {
+			Class<?> tipo = original.getClass().getComponentType();
+
+			@SuppressWarnings("unchecked")
+			T[] copia = (T[]) java.lang.reflect.Array.newInstance(tipo, tamanho);
+
+			for (int i = 0; i < tamanho; i++)
+				if (original[i] != null)
+					copia[i] = original[i];
+
+			return copia;
+		}
+
 	}
 
 }
