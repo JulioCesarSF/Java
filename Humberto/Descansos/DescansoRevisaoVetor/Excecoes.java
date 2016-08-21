@@ -1,52 +1,53 @@
-package br.com.fiap.Excecoes;
+package br.com.fiap.excecoes;
 
 @SuppressWarnings("serial")
-public class Excecoes extends Exception {
-
-	public Excecoes(String msg) {
-		super(msg);
+public class Excecao extends Exception {
+	
+	public Excecao(){
+		print();
 	}
-
-	public Excecoes(Exception e) {
+	
+	public Excecao(Exception e){
 		super(e);
+		print();
 	}
-
-	public Excecoes(String msg, boolean stack) {
-		super(msg);
-		if (stack)
-			print();
+	
+	public Excecao(String msg, Exception e){
+		super(msg + tratar(e), e);		
+		print();
 	}
-
-	public Excecoes(String msg, Exception e) {
-		super(msg, e);
-		System.out.println(tratar(e));
+	
+	public Excecao(String msg, Exception e, boolean stack){
+		super(msg + tratar(e), e);		
+		print();
+		
+		if(stack)
+			printTrace(e);
+	}	
+	
+	public static String tratar(Exception e){
+		
+		if(e.getClass().toString().equals("class java.lang.NullPointerException")){
+			return "NullPointer.";
+		}else if(e.getClass().toString().equals("class java.lang.NumberFormatException")){
+			return "Digitou diferente de número.";
+		}else
+			return "Erro sem tratamento";	
+		
 	}
-
-	public Excecoes(String msg, Exception e, boolean stack) {
-		super(msg, e);
-
-		System.out.println(tratar(e));
-		if (stack)
-			print();
+	
+	public void print(){		
+		System.out.println("--- Tratando ---");		
+		System.out.println(this.getMessage());		
+		System.out.println("--- Finalizo ---");
+		
 	}
-
-	private String tratar(Exception e) {
-		if (e.getClass().toString().equals("class java.lang.NumberFormatException")) {
-			return "Número inválido!";
-		} else if (e.getClass().toString().equals("class java.lang.ArithmeticException")) {
-			return "Divisão por 0.";
-		} else if (e.getClass().toString().equals("class java.lang.ArrayIndexOutOfBoundsException"))
-			return "Index maior que o vetor.";
-		else
-			return "Erro sem tratamento especial.";
+	
+	public void printTrace(Exception e){
+		System.out.println("--- Trace ---");
+		e.printStackTrace();
+		System.out.println("--- FIM ---");
 	}
-
-	private void print() {
-		System.out.println("---- Mensagem ----");
-		System.out.println(this.getMessage());
-		System.out.println("StackTrace:");
-		this.printStackTrace();
-		System.out.println("---- Fim Mensagem ----");
-	}
+	
 
 }
