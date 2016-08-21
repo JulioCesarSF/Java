@@ -24,14 +24,14 @@ public class Exerc04 {
 				for (int j = 0; j < 2; j++) {
 					if (j == 0) {
 						System.out.print("Digite o código:");
-						produto[i][0] = t.nextInt();
+						produto[i][j] = t.nextInt();
 						System.out.print("Digite o preço:");
-						subTotal[i][0] = t.nextDouble();
+						subTotal[i][j] = t.nextDouble();
 					}
 					if (j == 1) {
 						System.out.print("Digite a quantidade:");
-						produto[i][1] = t.nextInt();
-						subTotal[i][1] = produto[i][1] * subTotal[i][0]; // subTotal
+						produto[i][j] = t.nextInt();
+						subTotal[i][j] = produto[i][1] * subTotal[i][0]; // subTotal
 					}
 				}
 
