@@ -137,16 +137,12 @@ public class Teste {
 
 		List<Funcionario> f = new ArrayList<>();
 
-		try {
+		try {			
 
-			Funcionario ff = null;
+			while (h.aA("Cadastrar NOVO funcionário?", "Novo funcionário") != 1) {				
 
-			while (h.aA("Cadastrar NOVO funcionário?", "Novo funcionário") != 1) {
-
-				ff = new Funcionario(h.a("Nome?"), h.a("Cargo"), Double.parseDouble(h.a("Salário?")),
-						Integer.parseInt(h.a("Faltas?")));
-
-				f.add(ff);
+				f.add(new Funcionario(h.a("Nome?"), h.a("Cargo"), Double.parseDouble(h.a("Salário?")),
+						Integer.parseInt(h.a("Faltas?"))));
 			}
 
 			enunciados(f);
