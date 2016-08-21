@@ -20,24 +20,30 @@ public class Exerc04 {
 
 			for (int i = 0; i < produto.length; i++) {
 				System.out.println("Produto " + (i + 1));
+				double d = 0d;
 
 				for (int j = 0; j < 2; j++) {
-					double d = 0d;
-					
-					if (j == 0) {
+
+					switch (j) {
+					case 0:
 						System.out.print("Digite o código:");
 						produto[i][j] = t.nextInt();
 						System.out.print("Digite o preço:");
 						subTotal[i][j] = t.nextDouble();
 						d = subTotal[i][j];
-					}
-					if (j == 1) {
+						break;
+
+					case 1:
 						System.out.print("Digite a quantidade:");
 						produto[i][j] = t.nextInt();
 						subTotal[i][j] = produto[i][j] * d; // subTotal
 						totalGeral += subTotal[i][j];
+						break;
+
+					default:
+						break;
 					}
-				}			
+				}
 
 				System.out.println("");
 			}
