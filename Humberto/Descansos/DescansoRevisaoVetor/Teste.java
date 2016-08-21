@@ -10,7 +10,7 @@ import br.com.fiap.excecoes.Excecao;
 
 public class Teste {
 
-	/* a-) Valor total de total os veículos cadastrados */
+	/* a-) Valor total dos veículos cadastrados */
 	public static double valorTotal(Veiculo[] v) {
 		double soma = 0d;
 		for (Veiculo a : v)
