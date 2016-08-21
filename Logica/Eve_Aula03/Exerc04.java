@@ -22,20 +22,22 @@ public class Exerc04 {
 				System.out.println("Produto " + (i + 1));
 
 				for (int j = 0; j < 2; j++) {
+					double d = 0d;
+					
 					if (j == 0) {
 						System.out.print("Digite o código:");
 						produto[i][j] = t.nextInt();
 						System.out.print("Digite o preço:");
 						subTotal[i][j] = t.nextDouble();
+						d = subTotal[i][j];
 					}
 					if (j == 1) {
 						System.out.print("Digite a quantidade:");
 						produto[i][j] = t.nextInt();
-						subTotal[i][j] = produto[i][1] * subTotal[i][0]; // subTotal
+						subTotal[i][j] = produto[i][j] * d; // subTotal
+						totalGeral += subTotal[i][j];
 					}
-				}
-
-				totalGeral += subTotal[i][1];
+				}			
 
 				System.out.println("");
 			}
