@@ -49,7 +49,7 @@ public class Exerc04 {
 			}
 
 			for (int i = 0; i < produto.length; i++) {
-				System.out.println(new StringJoiner("\t").add("Código:" + produto[i][0]).add("Preço:" + subTotal[i][0])
+				System.out.println(new StringJoiner("\t").add("Código:" + produto[i][0]).add("Preço:" + nb.format(subTotal[i][0]))
 						.add("Quantidade:" + produto[i][1]).add("Total:" + nb.format(subTotal[i][1])).toString());
 			}
 
