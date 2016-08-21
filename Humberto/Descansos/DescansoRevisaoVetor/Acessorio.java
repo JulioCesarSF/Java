@@ -1,12 +1,12 @@
-package br.com.fiap.Beans;
+package br.com.fiap.beans;
 
 public class Acessorio {
+	
 	private String descricao;
 	private double valor;
-
-	public Acessorio() {
-	}
-
+	
+	public Acessorio(){}
+	
 	public Acessorio(String descricao, double valor) {
 		this.descricao = descricao;
 		this.valor = valor;
