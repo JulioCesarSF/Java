@@ -1,45 +1,45 @@
-package br.com.fiap.Beans;
+package br.com.fiap.beans;
 
 import java.text.NumberFormat;
 import java.util.StringJoiner;
 
 public class Veiculo {
-
+	
+	private short ano;
 	private String modelo, montadora;
-	private int ano;
 	private double valor;
 	private Acessorio[] acessorios;
-
-	public Veiculo() {
+	
+	public Veiculo(){}
+	
+	public Veiculo(short ano, String modelo, String montadora, double valor) {
+		this.ano = ano;
+		this.modelo = modelo;
+		this.montadora = montadora;
+		this.valor = valor;
+		this.acessorios = null;
 	}
 	
-	public Veiculo(String modelo, String montadora, int ano, double valor) {
+	public Veiculo(short ano, String modelo, String montadora, double valor, Acessorio[] acessorios) {
+		this.ano = ano;
 		this.modelo = modelo;
 		this.montadora = montadora;
-		this.ano = ano;
-		this.valor = valor;		
-	}
-
-	public Veiculo(String modelo, String montadora, int ano, double valor, Acessorio[] acessorios) {
-		this.modelo = modelo;
-		this.montadora = montadora;
-		this.ano = ano;
 		this.valor = valor;
 		this.acessorios = acessorios;
 	}
 	
 	public String getTudo(){
-		NumberFormat nb = NumberFormat.getCurrencyInstance();
+		NumberFormat n = NumberFormat.getCurrencyInstance();
 		return new StringJoiner(" - ")
-				.add("Modelo:" + modelo)
-				.add("Montadora:" + montadora)
-				.add("Ano:" + ano)
-				.add("Valor:" + nb.format(valor))
-				.toString();
+				.add("Montadora:\t" + montadora)
+				.add("Modelo:\t" + modelo)
+				.add("Ano:\t" + ano)
+				.add("Valor:\t" + n.format(valor))
+				.toString().toUpperCase();
 	}
-	
-	public int totalAcessorios(){
-		return this.acessorios.length;
+
+	public short getAno() {
+		return ano;
 	}
 
 	public String getModelo() {
@@ -50,16 +50,16 @@ public class Veiculo {
 		return montadora;
 	}
 
-	public int getAno() {
-		return ano;
-	}
-
 	public double getValor() {
 		return valor;
 	}
 
 	public Acessorio[] getAcessorios() {
 		return acessorios;
+	}
+
+	public void setAno(short ano) {
+		this.ano = ano;
 	}
 
 	public void setModelo(String modelo) {
@@ -70,10 +70,6 @@ public class Veiculo {
 		this.montadora = montadora;
 	}
 
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
-
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
@@ -81,5 +77,4 @@ public class Veiculo {
 	public void setAcessorios(Acessorio[] acessorios) {
 		this.acessorios = acessorios;
 	}
-
 }
