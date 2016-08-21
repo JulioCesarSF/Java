@@ -6,16 +6,14 @@ import java.util.StringJoiner;
 
 public class Exerc04 {
 
-	public static void main(String[] args) {
-
-		NumberFormat nb = NumberFormat.getCurrencyInstance();
+	public static void main(String[] args) {		
 
 		int[][] produto = new int[5][2];
 
 		double[][] subTotal = new double[5][2];
 
 		double totalGeral = 0d;
-
+		
 		try (Scanner t = new Scanner(System.in)) {
 
 			for (int i = 0; i < produto.length; i++) {
@@ -47,6 +45,8 @@ public class Exerc04 {
 
 				System.out.println("");
 			}
+			
+			NumberFormat nb = NumberFormat.getCurrencyInstance();
 
 			for (int i = 0; i < produto.length; i++) {
 				System.out.println(new StringJoiner("\t").add("Código:" + produto[i][0]).add("Preço:" + nb.format(subTotal[i][0]))
