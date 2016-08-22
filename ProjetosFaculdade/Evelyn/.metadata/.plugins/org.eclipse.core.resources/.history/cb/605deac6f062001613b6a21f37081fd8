@@ -1,0 +1,13 @@
+package br.com.fiap.teste;
+
+public class Exemplo01 {
+	
+	public static void main(String[] args) {
+		int[][] m = new int[3][3];
+		
+		
+	}
+	
+	
+
+}

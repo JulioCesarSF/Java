@@ -1,0 +1,42 @@
+package br.com.fiap.exercs;
+
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Exerc02 {
+
+	public static void main(String[] args) {
+		// 5
+
+		double[][] v = new double[5][1];
+		double todasM = 0d;
+
+		try (Scanner t = new Scanner(System.in)) {
+
+			for (int i = 0; i < v.length; i++) {
+
+				System.out.print("Digite o valor da venda da loja " + (i + 1) + ":");
+				v[i][0] = t.nextDouble();
+				/* a) Faturamento do mês de cada loja */
+				v[i][1] = v[i][0] / 4;
+				todasM += v[i][1];
+			}
+
+			/* b) Faturamento por semana de todas as lojas */
+			NumberFormat n = NumberFormat.getCurrencyInstance();
+			for (int i = 0; i < v.length; i++)
+				System.out.println("O faturamento da loja " + (i + 1) + ":" + n.format(v[i][0]));
+			
+
+			for (int i = 0; i < v.length; i++)
+				System.out.println("Total por semana " + (i + 1) + ":" + n.format(v[i][1]));
+
+			System.out.println("Total");
+
+		} catch (Exception e) {
+			System.out.println("Erro: " + e);
+		}
+
+	}
+
+}

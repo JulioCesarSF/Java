@@ -1,0 +1,18 @@
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+ul.menu li{
+	display : inline;
+	padding: 15px;
+}
+
+ul.menu a{
+	text-decoration: none;
+}

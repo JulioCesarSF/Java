@@ -1,0 +1,25 @@
+package br.com.fiap.exercs;
+
+import java.util.Scanner;
+
+public class Exerc04 {
+
+	public static void main(String[] args) {
+		
+		
+		int[][] m = new int[2][2];
+		
+		try(Scanner t = new Scanner(System.in)){
+			
+		for (int i = 0; i < m.length; i++) {
+			for(int j = 0; i < m.length;j++){
+				System.out.println("Informe um número M[" +i+ "," + j +"]=");
+			}
+		}
+		} catch (Exception e) {
+			System.out.println("Erro; " + e);
+		}
+
+	}
+
+}

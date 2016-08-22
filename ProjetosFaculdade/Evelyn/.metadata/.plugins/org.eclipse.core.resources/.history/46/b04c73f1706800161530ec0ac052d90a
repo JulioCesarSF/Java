@@ -1,0 +1,27 @@
+package br.com.fiap.exercs;
+
+import java.util.Scanner;
+
+public class Exerc03 {
+
+	public static void main(String[] args) {
+		
+		String[] l = new String[8];
+		String[] p = new String[4];
+		double[][] pl = new double[8][4];
+		
+		try (Scanner t = new Scanner(System.in)) {
+			
+			for(String a : l)
+				a = new String(t.nextLine());
+			
+			for(String b : p)
+				b = new String(t.nextLine());
+
+		} catch (Exception e) {
+			System.out.println("Erro: " + e);
+		}
+
+	}
+
+}

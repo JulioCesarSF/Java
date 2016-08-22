@@ -1,0 +1,18 @@
+package br.com.fiap.testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.beans.Telefone;
+import br.com.fiap.excecoes.Excecoes;
+
+public class Teste {
+
+	public static void main(String[] args) throws Excecoes {
+		List<Telefone> meusFones = new ArrayList<Telefone>();
+		
+		
+
+	}
+
+}

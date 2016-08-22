@@ -1,0 +1,20 @@
+package br.com.fiap.teste;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import br.com.fiap.beans.Cargo;
+
+public class TesteMap {
+	
+	public static void main(String[] args) {
+		Cargo cargo1 = new Cargo("Estagiario", "Pleno", 2500);
+		Cargo cargo2 = new Cargo("Estagiario", "Junior", 2000);
+		
+		Map<String, Cargo> mapaCargos = new HashMap<String, Cargo>();
+		
+		mapaCargos.put("1", cargo1);
+		mapaCargos.put("2", cargo2);
+	}
+
+}

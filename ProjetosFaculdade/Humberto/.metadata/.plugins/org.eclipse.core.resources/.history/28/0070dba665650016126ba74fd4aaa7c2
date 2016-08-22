@@ -1,0 +1,24 @@
+package br.com.fiap.Excecoes;
+
+@SuppressWarnings("serial")
+public class Excecoes extends Exception{
+	
+	public Excecoes(String msg){
+		super(msg);
+		
+		print();
+	}
+	
+	public Excecoes(String msg, Exception e){
+		super(msg, e);
+		
+		print();
+	}
+	
+	public void print(){
+		System.out.println("---- StackTrace ----");
+		System.out.println(this.getMessage());
+		System.out.println("---- Fim StackTrace ----");
+	}
+
+}

@@ -1,0 +1,9 @@
+package br.com.fiap.Beans;
+
+public class Acessorios {
+	private String descricao;
+	private double valor;
+	
+	
+	
+}

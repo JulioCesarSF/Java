@@ -1,0 +1,19 @@
+package br.com.fiap.exercs;
+
+import java.util.Scanner;
+
+public class Exerc02 {
+
+	public static void main(String[] args) {
+
+		double[][] v = new double[5][4]; // 5 lojas, 4 semanas cada
+
+		try (Scanner t = new Scanner(System.in)) {
+
+		} catch (Exception e) {
+			System.out.println("Erro:\t" + e);
+		}
+
+	}
+
+}

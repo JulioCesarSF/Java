@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;br.com.fiap.Exercs.Exerc03_2.java&apos; to &apos;Exerc04_2.java&apos;&#x0D;&#x0A;- Original project: &apos;Aula03&apos;&#x0D;&#x0A;- Original element: &apos;br.com.fiap.Exercs.Exerc03_2.java&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.fiap.Exercs.Exerc04_2.java&apos;" description="Rename compilation unit &apos;Exerc03_2.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;br.com.fiap.Exercs{Exerc03_2.java" name="Exerc04_2.java" references="false" stamp="1471797566200" version="1.0"/>
+</session>

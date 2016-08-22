@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DescansoExcecoes_funcionario/DescansoExcecoes_funcionario.iml" filepath="$PROJECT_DIR$/DescansoExcecoes_funcionario/DescansoExcecoes_funcionario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DescansoExcecoes_heranca/DescansoExcecoes_heranca.iml" filepath="$PROJECT_DIR$/DescansoExcecoes_heranca/DescansoExcecoes_heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DescansoRevisaoVetor/DescansoRevisaoVetor.iml" filepath="$PROJECT_DIR$/DescansoRevisaoVetor/DescansoRevisaoVetor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excecoes/Excecoes.iml" filepath="$PROJECT_DIR$/Excecoes/Excecoes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excecoes_Cliente_tel/Excecoes_Cliente_tel.iml" filepath="$PROJECT_DIR$/Excecoes_Cliente_tel/Excecoes_Cliente_tel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heranca/Heranca.iml" filepath="$PROJECT_DIR$/Heranca/Heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List_meu/List_meu.iml" filepath="$PROJECT_DIR$/List_meu/List_meu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lista/Lista.iml" filepath="$PROJECT_DIR$/Lista/Lista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrdemObjetos/OrdemObjetos.iml" filepath="$PROJECT_DIR$/OrdemObjetos/OrdemObjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TesteException/TesteException.iml" filepath="$PROJECT_DIR$/TesteException/TesteException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VetorObjeto/VetorObjeto.iml" filepath="$PROJECT_DIR$/VetorObjeto/VetorObjeto.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+package br.com.fiap.Excecoes;
+
+@SuppressWarnings("serial")
+public class Excecoes extends Exception {
+
+	public Excecoes(String msg) {
+		super(msg);
+
+		print();
+	}
+
+	public Excecoes(String msg, Exception e) {
+		super(msg, e);
+
+		print();
+	}
+
+	public String tratar() {
+		if (this.getClass().toString().equals("class java.lang.NumberFormatException")) {
+			return "Número inválido!";
+		} else if (this.getClass().toString().equals("class java.lang.ArithmeticException")) {
+			return "Divisão por 0.";
+		} else
+			return "Erro não tratado.";
+	}
+
+	public void print() {
+		System.out.println("---- Mensagem ----");
+		System.out.println(this.getMessage());
+		System.out.println("---- Fim Mensagem ----");
+	}
+
+}

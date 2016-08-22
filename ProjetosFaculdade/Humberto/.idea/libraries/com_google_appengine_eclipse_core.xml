@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.google.appengine.eclipse.core">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.metadata/.plugins/com.google.appengine.eclipse.core/appengine-tools-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.metadata/.plugins/com.google.appengine.eclipse.core/appengine-sdk-proxy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+body{
+	font-family: Consolas, Arial;
+	width: 50%;
+	margin: auto;
+}
+
+table, th, td{
+	border: 1px solid black;
+}

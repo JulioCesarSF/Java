@@ -1,0 +1,21 @@
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+ul, li{
+	display: inline-block;
+}
+
+li{
+	padding: 15px;
+}
+
+li a{
+	text-decoration: none;
+}

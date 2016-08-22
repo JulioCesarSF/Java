@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Média Nota</title>
+</head>
+<body>
+
+	<h1>Média Nota</h1>
+
+	<form method="post" action="calcular">
+
+		<div>
+			<label for="idPS">Nota de PS:</label> <input id="idPS" type="text"
+				name="ps">
+		</div>
+		<div>
+			<label for="idNAC">Nota de NAC:</label> <input id="idNAC" type="text"
+				name="nac">
+		</div>
+		<div>
+			<label for="idAM">Nota de AM:</label> <input id="idAM" type="text"
+				name="am">
+		</div>
+		<div>
+			<input type="submit" value="Enviar">
+		</div>
+
+	</form>
+	
+	<div>
+		<a href="busca-aluno.html">Busca Aluno</a>
+	</div>
+
+</body>
+</html>

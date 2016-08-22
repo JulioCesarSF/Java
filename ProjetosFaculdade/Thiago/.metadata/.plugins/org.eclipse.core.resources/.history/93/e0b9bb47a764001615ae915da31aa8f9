@@ -1,0 +1,58 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.Out"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tabuada</title>
+<link rel="" type="">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div>
+		<h1>Tabuada</h1>
+	</div>
+
+	<table>
+		<!-- 1 -->
+		<%
+			int n = 1;
+			int r = 0;
+			for (int i = 0; i < 11; i++) {
+				r = n * i;
+				System.out.println(r);
+		%>
+
+		<tr>
+			<td><%=n%> x <%=i%> =</td>
+			<td><%=r%>
+			<td>
+		</tr>
+
+		<%
+			}
+		%>
+		<!-- 2 -->
+		<%
+			int n = 2;
+			int r = 0;
+			for (int i = 0; i < 11; i++) {
+				r = n * i;
+				System.out.println(r);
+		%>
+
+		<tr>
+			<td><%=n%> x <%=i%> =</td>
+			<td><%=r%>
+			<td>
+		</tr>
+
+		<%
+			}
+		%>
+
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu li{
+	border: 1px solid black;
+	display: inline-block;
+	background-color: rgba(0,0, 255, 0.2);
+}
+
+.menu a {
+	text-decoration: none;
+	color: blue;
+}
+
+.roda {
+	text-align: center;
+	border: 1px solid black;
+}

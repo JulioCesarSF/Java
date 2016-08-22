@@ -1,0 +1,17 @@
+package br.com.fiap.testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.beans.Telefone;
+
+public class Teste {
+
+	public static void main(String[] args) throws Excecoes {
+		List<Telefone> meusFones = new ArrayList<Telefone>();
+		
+		
+
+	}
+
+}

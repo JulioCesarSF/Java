@@ -1,0 +1,5 @@
+body{
+	font-family: Consolas, Arial;
+	width: 70%;
+	margin: 0 auto;
+}

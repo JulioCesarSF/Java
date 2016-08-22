@@ -1,0 +1,9 @@
+package br.com.fiap.teste;
+
+public class TesteMap {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

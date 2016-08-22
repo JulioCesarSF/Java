@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.com.fiap.Excecoes.Excecoes&apos; to &apos;Excecao&apos;&#x0D;&#x0A;- Original project: &apos;DescansoRevisaoVetor&apos;&#x0D;&#x0A;- Original element: &apos;br.com.fiap.Excecoes.Excecoes&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.fiap.Excecoes.Excecao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Excecoes&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;br.com.fiap.Excecoes{Excecoes.java[Excecoes" matchStrategy="1" name="Excecao" qualified="false" references="true" similarDeclarations="false" stamp="1471795140793" textual="false" version="1.0"/>
+</session>

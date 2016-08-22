@@ -1,0 +1,37 @@
+body{
+	font-family: Consolas, Arial;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+ul.menu li{
+	display : inline;
+	padding: 15px;
+	border : 1px solid black;
+}
+
+ul.menu a{
+	text-decoration: none;
+	color: blue;
+}
+
+ul.menu a:HOVER {
+	color : red;
+}
+
+div.container{
+	width: 50%;
+	margin: 0 auto;
+}
+
+div.rodape p{
+	text-align: center;
+}

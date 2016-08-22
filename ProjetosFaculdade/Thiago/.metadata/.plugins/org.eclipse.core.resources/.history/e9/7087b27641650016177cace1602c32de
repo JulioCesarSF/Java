@@ -1,0 +1,18 @@
+body{
+	font-family: Consolas, Arial;
+	width: 50%;
+	margin: auto;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 5px;
+	border: 1px solid black;
+}
+
+label{
+	width: 25px;
+}

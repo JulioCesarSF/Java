@@ -1,0 +1,15 @@
+INDEX VERSION 1.3+G:\Faculdade\Thiago\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4234831296.index
+1095356618.index
+839876280.index
+3733406763.index
+2370114284.index
+167432824.index
+1238098318.index
+1280810535.index
+2628034525.index
+1313520080.index
+1639302972.index
+3618660150.index
+3429121964.index
+3559521745.index

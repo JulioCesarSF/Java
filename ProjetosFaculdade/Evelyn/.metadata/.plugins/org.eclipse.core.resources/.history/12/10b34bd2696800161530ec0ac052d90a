@@ -1,0 +1,27 @@
+package br.com.fiap.exercs;
+
+import java.util.Scanner;
+
+public class Exerc01 {
+
+	public static void main(String[] args) {
+		try (Scanner t = new Scanner(System.in)) {
+			
+			int[][] c = new int[1][3];
+			
+			for(int i =0; i < c.length;i++){
+				System.out.print("Digite o código do " + (i+1) + " cliente:");
+				c[i] = t.nextInt();
+				System.out.print("Digite a quantidade de milhagem:");
+			
+				
+			}
+			
+			
+
+		} catch (Exception e) {
+			System.out.println("Erro:\t" + e);
+		}
+	}	
+
+}

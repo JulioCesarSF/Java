@@ -1,0 +1,26 @@
+package br.com.fiap.teste;
+
+import java.util.Scanner;
+
+public class Exemplo01 {
+	
+	public static void main(String[] args) {
+		
+		try(Scanner t = new Scanner(System.in)){
+			
+			//criar matriz
+			int[][] m = new int[3][3];
+			
+			
+		}catch (Exception e) {
+			System.out.println("erro: " + e);
+		}
+		
+		
+		
+		
+	}
+	
+	
+
+}

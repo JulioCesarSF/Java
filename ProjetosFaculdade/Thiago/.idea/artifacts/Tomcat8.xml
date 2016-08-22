@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Tomcat8">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tomcat8</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="06-CadastroProduto/web/Web" />
+      <element id="javaee-facet-resources" facet="05-JSP-Servlet/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="04-JSP" />
+          <element id="module-output" name="06-CadastroProduto" />
+          <element id="module-output" name="05-JSP-Servlet" />
+          <element id="module-output" name="02-Login" />
+          <element id="module-output" name="01-HelloWorld" />
+          <element id="module-output" name="Exercicio_01" />
+          <element id="module-output" name="localhost" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="04-JSP/web/Web" />
+      <element id="javaee-facet-resources" facet="02-Login/web/Web2" />
+      <element id="javaee-facet-resources" facet="02-Login/web/Web" />
+      <element id="javaee-facet-resources" facet="01-HelloWorld/web/Web" />
+      <element id="javaee-facet-resources" facet="Exercicio_01/web/Web" />
+    </root>
+  </artifact>
+</component>

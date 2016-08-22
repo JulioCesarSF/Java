@@ -1,0 +1,12 @@
+127.0.0.1 - - [19/Aug/2016:14:42:38 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:42:38 -0300] "GET /06-CadastroProduto/cadastro.jsp HTTP/1.1" 200 912
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:42:38 -0300] "GET /06-CadastroProduto/estilo.css HTTP/1.1" 200 198
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:42:42 -0300] "POST /06-CadastroProduto/cadastrar HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:45 -0300] "GET /Exercicio_02-JSPs/tabuada.jsp HTTP/1.1" 200 5579
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:45 -0300] "GET /Exercicio_02-JSPs/estilo.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:52 -0300] "GET /Exercicio_02-JSPs/tabuada.jsp HTTP/1.1" 200 5579
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:52 -0300] "GET /Exercicio_02-JSPs/estilo.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:52 -0300] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:53 -0300] "GET /Exercicio_02-JSPs/tabuada.jsp HTTP/1.1" 200 5579
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:54 -0300] "GET /Exercicio_02-JSPs/operacoes-matematicas.jsp HTTP/1.1" 200 824
+0:0:0:0:0:0:0:1 - - [19/Aug/2016:14:45:56 -0300] "GET /Exercicio_02-JSPs/tabuada.jsp HTTP/1.1" 200 5579

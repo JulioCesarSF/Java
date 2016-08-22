@@ -1,0 +1,14 @@
+package br.com.fiap.excecoes;
+
+@SuppressWarnings("serial")
+public class Excecoes extends Exception {
+	
+	public Excecoes(String mgs){
+		super(msg);
+	}
+	
+	public Excecoes(String msg, Exception e){
+		super(msg, e);
+	}
+
+}

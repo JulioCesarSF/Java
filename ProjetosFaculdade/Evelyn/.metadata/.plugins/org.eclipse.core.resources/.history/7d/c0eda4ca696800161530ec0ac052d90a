@@ -1,0 +1,17 @@
+package br.com.fiap.exercs;
+
+import java.util.Scanner;
+
+public class Exerc01 {
+
+	public static void main(String[] args) {
+		try (Scanner t = new Scanner(System.in)) {
+			
+			
+
+		} catch (Exception e) {
+			System.out.println("Erro:\t" + e);
+		}
+	}
+
+}

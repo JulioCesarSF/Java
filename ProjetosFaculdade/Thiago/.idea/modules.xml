@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-HelloWorld/01-HelloWorld.iml" filepath="$PROJECT_DIR$/01-HelloWorld/01-HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Login/02-Login.iml" filepath="$PROJECT_DIR$/02-Login/02-Login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-JSP/04-JSP.iml" filepath="$PROJECT_DIR$/04-JSP/04-JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-JSP-Servlet/05-JSP-Servlet.iml" filepath="$PROJECT_DIR$/05-JSP-Servlet/05-JSP-Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-CadastroProduto/06-CadastroProduto.iml" filepath="$PROJECT_DIR$/06-CadastroProduto/06-CadastroProduto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicio_01/Exercicio_01.iml" filepath="$PROJECT_DIR$/Exercicio_01/Exercicio_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/localhost.iml" filepath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/localhost.iml" />
+    </modules>
+  </component>
+</project>

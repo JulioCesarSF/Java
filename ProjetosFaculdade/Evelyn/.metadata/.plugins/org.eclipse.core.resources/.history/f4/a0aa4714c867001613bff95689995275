@@ -1,0 +1,47 @@
+package br.com.fiap.testes;
+
+public class BubbleSort {
+
+	public static class Bubble {
+
+		public static void ordena(int[] l) {
+			boolean trocar = true;
+			for (int i = 0; i < l.length && trocar; i++){
+				trocar = false;
+				for (int j = 1; j < l.length - 1; j++)
+					if (l[i] < l[j - 1])
+						trocar = troca(l, i, j - 1);
+			}
+			
+			print(l);
+		}
+
+		private static boolean troca(int[] l, int a, int b) {
+			int aux = l[a];
+			l[a] = l[b];
+			l[b] = aux;
+			return true;
+		}
+		
+		public static void print(int[] l){
+			for(int i = 0; i < l.length;i++)
+				System.out.println(l[i]);
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		int[] n = { 5, 3, 4, 2, 1, 99, 31, 45, 78, 12, 13 };
+
+		Bubble.ordena(n);
+
+		/*for (int i = 0; i < n.length; i++) {
+			System.out.print(n[i]);
+			if (i != n.length - 1)
+				System.out.print(", ");
+		}*/
+
+	}
+
+}
