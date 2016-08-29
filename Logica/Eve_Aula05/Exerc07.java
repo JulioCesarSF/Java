@@ -19,7 +19,7 @@ public class Exerc07 {
 			for (int i = 0; i < a.length - 1; i++) {
 				System.out.println("--- Estoque no armazem (" + (i + 1) + ") ---");
 				for (int j = 0; j < 3; j++) {
-					System.out.print("Informe a quantidade em estoque do Produto (" + (j + 1) + "):\t");
+					System.out.print("Informe a quantidade em estoque do Produto ( " + (j + 1) + " ):");
 					a[i][j] = t.nextInt();
 					if (j == 1 && a[i][j] > maior) {
 						posAMaior = (i + 1);
@@ -33,44 +33,44 @@ public class Exerc07 {
 			}
 
 			/* custo */
-			System.out.println("---- CUSTO DE CADA PRODUTO");
+			System.out.println("\n---- CUSTO DE CADA PRODUTO\n");
 			for (int i = 0; i < 3; i++) {
-				System.out.print("Custo do produto (" + (i + 1) + ") : ");
+				System.out.print("Custo do produto ( " + (i + 1) + " ) : ");
 				a[4][i] = t.nextInt();
 			}
 
 			/* a) */
-			System.out.println("----------- QUANTIDADE DE ITENS EM CADA ARMAZEM -----------");
+			System.out.println("\n----------- QUANTIDADE DE ITENS EM CADA ARMAZEM -----------\n");
 			for (int i = 0; i < a.length - 1; i++) {
 				int total = 0;
 				for (int j = 0; j < 3; j++) {
 					total += a[i][j];
 				}
-				System.out.println("--- Estoque no armazem (" + (i + 1) + ") : " + total);
+				System.out.println("--- Estoque no armazem ( " + (i + 1) + " ) : " + total);
 			}
 
 			/* b) */
-			System.out.println("---- ARMAZEM COM MAIOR ESTOQUE DO PRODUTO 2");
-			System.out.println("---- Armazém (" + posAMaior + ") Quantidade em estoque:" + maior);
+			System.out.println("\n---- ARMAZEM COM MAIOR ESTOQUE DO PRODUTO 2");
+			System.out.println("\n---- Armazém ( " + posAMaior + " ) Quantidade em estoque:" + maior + "\n");
 
 			/* c) */
 			System.out.println("---- ARMAZEM COM MENOR ESTOQUE");
-			System.out.println("---- Armazém (" + posAMenor + ") Quantidade em estoque:" + menor);
+			System.out.println("\n---- Armazém ( " + posAMenor + " ) Quantidade em estoque:" + menor + "\n");
 
 			/* d) */
 			NumberFormat n = NumberFormat.getCurrencyInstance();
-			System.out.println("---- CUSTO TOTAL DE CADA PRODUTO");
+			System.out.println("---- CUSTO TOTAL DE CADA PRODUTO\n");
 			for (int i = 0; i < 3; i++) {
 				int total = 0;
 				for (int j = 0; j < a.length - 1; j++) {
 					total += a[j][i];
 				}
 				total *= a[4][i];
-				System.out.println("Custo total do produto (" + (i + 1) + "): " + n.format(total));
+				System.out.println("Custo total do produto ( " + (i + 1) + " ): " + n.format(total));
 			}
 
 			/* e) */
-			System.out.println("----- CUSTO TOTAL DE CADA ARMAZEM -----");
+			System.out.println("\n----- CUSTO TOTAL DE CADA ARMAZEM -----\n");
 
 			for (int i = 0; i < a.length - 1; i++) {
 				int total = 0;
@@ -80,7 +80,7 @@ public class Exerc07 {
 					p *= a[4][j];
 					total += p;
 				}
-				System.out.println("Custo total no armazem (" + (i + 1) + "): " + n.format(total));
+				System.out.println("Custo total no armazem ( " + (i + 1) + " ): " + n.format(total));
 			}
 
 		} catch (Exception e) {
