@@ -14,10 +14,12 @@ public class Exerc05 {
 			for (int i = 0; i < sexo.length; i++) {
 
 				System.out.println("Habitante " + (i + 1) + ":");
+				
 				System.out.print("Sexo:");
-				do {					
-					sexo[i] = t.nextLine().toLowerCase().charAt(0);
-				} while (!validarSexo(sexo[i]));
+				do {
+					String linha = t.next() + t.nextLine();
+					sexo[i] = linha.toLowerCase().charAt(0);
+				} while (!validarSexo(String.valueOf(sexo[i])));
 
 				System.out.print("Olho:");
 				do {
@@ -33,9 +35,9 @@ public class Exerc05 {
 				do {
 					idade[i] = t.nextInt();
 				} while (!validarIdade(idade[i]));
-
-				System.out.println("");
 				
+				System.out.println("");
+
 			}
 
 			System.out.println(
@@ -81,11 +83,11 @@ public class Exerc05 {
 				t++;
 			}
 		}
-		return media / t;
+		return (media / t);
 	}
 
-	public static boolean validarSexo(char s) {
-		if (s != ' ' || s == 'm' || s == 'f')
+	public static boolean validarSexo(String s) {
+		if (s.equals("m") || s.equals("f"))
 			return true;
 		return false;
 	}
