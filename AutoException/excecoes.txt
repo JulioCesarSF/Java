@@ -1,0 +1,6 @@
+class java.lang.NullPointerException "NullPointerException"
+class java.lang.NumberFormatException "Número fora do formato"
+class java.sql.SQLRecoverableException "Network adapther"
+class java.io.FileNotFoundException "Arquivo não encontrado"
+class java.net.ConnectExceptionclass "Timeout"
+class java.lang.ArithmeticException "Divisão por 0."
